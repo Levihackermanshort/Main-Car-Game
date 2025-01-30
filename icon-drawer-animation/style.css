@@ -1,0 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    width: 500px;
+    aspect-ratio: 1;
+    position: relative;
+}
+
+.icon {
+    --size: 70;
+    width: calc(var(--size)*1px);
+    height: calc(var(--size)*1px);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -5;
+    font-weight: bold;
+    font-size: 2rem;
+    cursor: pointer;
+    transform: translate(calc(var(--size)/2 * -1px), calc(var(--size)/2 * -1px));
+    transition: transform 0.3s ease;
+    -webkit-transform: translate(calc(var(--size)/2 * -1px), calc(var(--size)/2 * -1px));
+    -moz-transform: translate(calc(var(--size)/2 * -1px), calc(var(--size)/2 * -1px));
+    -ms-transform: translate(calc(var(--size)/2 * -1px), calc(var(--size)/2 * -1px));
+    -o-transform: translate(calc(var(--size)/2 * -1px), calc(var(--size)/2 * -1px));
+    -webkit-transition: transform 0.3s ease;
+    -moz-transition: transform 0.3s ease;
+    -ms-transition: transform 0.3s ease;
+    -o-transition: transform 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#icon1 {
+    z-index: 1;
+    background-color: #d07f65;
+}
+
+#icon2 {
+    background-color: #fed4ae;
+}
+
+#icon3 {
+    background-color: #86eb83;
+}
+
+#icon4 {
+    background-color: #a6eaef;
+}
+
+#icon5 {
+    background-color: #d1b8d1;
+}
+
+#icon6 {
+    background-color: #f9b4be;
+}
