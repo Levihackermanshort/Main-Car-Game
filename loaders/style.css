@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.box {
+    height: 200px;
+    display: grid;
+    place-items: center;
+}
+
+/* Loader 1 CSS */
+
+.box-1 .loader {
+    width: 80px;
+    height: 80px;
+}
+
+.box-1 .circle {
+    height: 100%;
+    border-radius: 50%;
+    animation: animate 2s linear infinite;
+    -o-animation: animate 2s linear infinite;
+    -webkit-animation: animate 2s linear infinite;
+    -moz-animation: animate 2s linear infinite;
+    border: 8px solid #30395290;
+    border-top: 8px solid #303952;
+
+}
+
+@-webkit-keyframes animate {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+@-o-keyframes animate {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+@-moz-keyframes animate {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+@-ms-keyframes animate {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes animate {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+/* Loader 2 CSS */
+.box-2 .loader {
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+.box-2 .loader>span {
+    position: absolute;
+    display: inline-block;
+    width: 40%;
+    height: 40%;
+    background-color: #1a1818;
+    animation: animate-2 2s linear infinite;
+    -o-animation: animate-2 2s linear infinite;
+    -webkit-animation: animate-2 2s linear infinite;
+    -moz-animation: animate-2 2s linear infinite;
+    border-radius: 3px;
+}
+
+#rect_loader1 {
+    animation-delay: 0.67s;
+    -webkit-animation-delay: 0.67s;
+    -moz-animation-delay: 0.67s;
+    -o-animation-delay: 0.67s;
+}
+
+#rect_loader2 {
+    animation-delay: 1.34s;
+    -webkit-animation-delay: 1.34s;
+    -moz-animation-delay: 1.34s;
+    -o-animation-delay: 1.34s;
+}
+
+
+@-webkit-keyframes animate-2 {
+    0% {
+        top: 0%;
+        left: 0%;
+    }
+
+    25% {
+        top: 0%;
+        left: 60%;
+    }
+
+    50% {
+        top: 60%;
+        left: 60%;
+    }
+
+    75% {
+        top: 60%;
+        left: 0%;
+    }
+
+    100% {
+        top: 0%;
+        left: 0%;
+    }
+}
+
+@-o-keyframes animate-2 {
+    0% {
+        top: 0%;
+        left: 0%;
+    }
+
+    25% {
+        top: 0%;
+        left: 60%;
+    }
+
+    50% {
+        top: 60%;
+        left: 60%;
+    }
+
+    75% {
+        top: 60%;
+        left: 0%;
+    }
+
+    100% {
+        top: 0%;
+        left: 0%;
+    }
+}
+
+@-moz-keyframes animate-2 {
+    0% {
+        top: 0%;
+        left: 0%;
+    }
+
+    25% {
+        top: 0%;
+        left: 60%;
+    }
+
+    50% {
+        top: 60%;
+        left: 60%;
+    }
+
+    75% {
+        top: 60%;
+        left: 0%;
+    }
+
+    100% {
+        top: 0%;
+        left: 0%;
+    }
+}
+
+@keyframes animate-2 {
+    0% {
+        top: 0%;
+        left: 0%;
+    }
+
+    25% {
+        top: 0%;
+        left: 60%;
+    }
+
+    50% {
+        top: 60%;
+        left: 60%;
+    }
+
+    75% {
+        top: 60%;
+        left: 0%;
+    }
+
+    100% {
+        top: 0%;
+        left: 0%;
+    }
+}
